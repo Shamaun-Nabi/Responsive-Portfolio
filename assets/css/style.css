@@ -23,13 +23,13 @@ body {
   margin: 0 auto;
 }
 #mainHeader {
-  position: fixed;
-  z-index: 99;
-  width: 100%;
-  margin: 0 0 30px;
-  overflow: auto;
+  /* position: sticky; */
+  /* z-index: 99; */
+  /* width: 100%; */
+  /* margin: 0 0 30px; */
+  /* overflow: auto; */
   color: #ffffff;
-  border-radius: 0px;
+  /* border-radius: 0px; */
   background: linear-gradient(145deg, #202126, #27282d);
   box-shadow: 0px 0px 15px #222328, -5px -12px 1px #26272c;
 }
@@ -67,7 +67,7 @@ nav a:hover {
   color: rgb(50, 199, 130);
 }
 #about-container {
-  padding-top: 100px;
+  padding-top: 10px;
 }
 .title {
   border-bottom: 2px solid rgba(0, 0, 0, 0.385);
@@ -148,6 +148,11 @@ input[type="submit"] {
   padding: 5px;
   border-top: 5px solid rgb(26, 214, 180);
 }
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
 
 /* Responsive */
 @media only screen and (max-width: 980px) {
@@ -167,7 +172,6 @@ input[type="submit"] {
     padding-right: 30px;
     padding-left: 30px;
   }
- 
 }
 
 @media only screen and (max-width: 768px) {
@@ -189,13 +193,13 @@ input[type="submit"] {
     margin-bottom: 8px;
   }
 
-  .content{
+  .content {
     display: block;
   }
-  .pro-image{
-    width:300px;
+  .pro-image {
+    width: 300px;
   }
-  .column{
+  .column {
     float: right;
     width: 80%;
   }
@@ -205,11 +209,11 @@ input[type="submit"] {
   .container {
     width: 100%;
   }
-  .content{
+  .content {
     display: block;
   }
-  .pro-image{
-    width:300px;
+  .pro-image {
+    width: 300px;
   }
 
   #logo {
@@ -222,11 +226,18 @@ input[type="submit"] {
     margin-top: 15px;
     margin-bottom: 10px;
   }
-  .column{
+  .column {
     float: right;
     width: 100%;
   }
   /* .work{
   width: 100%;
   } */
+
+  input {
+    width: 100%;
+  }
+  textarea {
+    width: 100%;
+  }
 }
